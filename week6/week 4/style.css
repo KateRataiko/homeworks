@@ -1,0 +1,258 @@
+.mainname {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+
+    align-self: auto;
+    color: rgb(253, 250, 250);
+    text-align: center;
+    width: 834px;
+    height: 104px;
+    left: 140px;
+    top: 180px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 52px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 80px;
+
+
+}
+
+.secondname {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+
+    align-self: auto;
+    color: rgb(253, 250, 250);
+    text-align: center;
+    width: 834px;
+    height: 104px;
+    left: 140px;
+    top: 180px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 52px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+
+}
+
+.thirdname {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+
+    align-self: auto;
+    margin: 100px;
+    position: absolute;
+    width: 421px;
+    height: 18px;
+    left: 140px;
+    top: 284px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.logo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+
+    align-self: auto;
+    position: absolute;
+    width: 103.88px;
+    height: 103.88px;
+    left: 127.58px;
+    top: 329px;
+
+    background: url(image.png);
+    filter: blur(6.10235px);
+    transform: rotate(30.41deg);
+}
+
+
+
+.marafon {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+
+    align-self: auto;
+    position: absolute;
+    width: 212px;
+    height: 29px;
+    left: 305px;
+    top: 42px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+}
+
+.start {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+
+    align-self: auto;
+    position: absolute;
+    width: 124px;
+    height: 32px;
+    left: 979px;
+    top: 32px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+}
+
+#registration {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-self: auto;
+
+    position: absolute;
+    width: 188.99px;
+    height: 63.64px;
+    left: 158.98px;
+    top: 495px;
+    color: #131212;
+    border: 1px;
+}
+
+
+
+.fon1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-self: auto;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url(/example/image/aquaria.jpg) center / cover no-repeat;
+    filter: blur(10px);
+}
+
+.girl {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-self: auto;
+
+    position: absolute;
+    width: 1060px;
+    height: 708px;
+    left: 569px;
+    top: 100px;
+}
+
+#registration {
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-self: auto;
+
+    position: absolute;
+    width: 228px;
+    height: 63.64px;
+    left: 140px;
+    top: 495px;
+
+    background: #D9E454;
+    box-shadow: 0px 0px 11px #D9E454;
+    border-radius: 5px;
+}
+
+.free {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-self: auto;
+
+    position: absolute;
+    width: 174px;
+    height: 36px;
+    left: 459px;
+    top: 511px;
+
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+}
+
+.clouds {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-self: auto;
+
+    position: absolute;
+    width: 1278.35px;
+    height: 454.33px;
+    left: 623.78px;
+    top: -281.76px;
+
+    background: url(image 9118 (1).png);
+    transform: rotate(9.86deg)
+}
