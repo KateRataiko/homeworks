@@ -1,0 +1,139 @@
+.services {
+    padding: 150px 0;
+}
+
+
+.section_h2,
+.services_h4 {
+    color: black;
+    text-align: center;
+}
+
+.section_h2 {
+    margin-bottom: 55px;
+}
+
+.services_h4 {
+    margin: 0 auto;
+    max-width: 172px;
+    text-transform: uppercase;
+}
+
+.services_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30 px;
+    justify-items: center;
+}
+
+.services_grid-item {
+    padding: 59px 0;
+    background-color: #f7f7f7;
+    width: 350px;
+}
+
+.services_icon {
+    margin: 0 auto 40px;
+}
+
+.text-h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 0, 02em;
+}
+
+.sity {
+    width: 2200px;
+    height: 300px;
+    background-color: #25B33f;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1280px) {
+    .services {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .services_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .services_grid-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.work {
+    background-color: orange;
+    color: white;
+    width: 2200px;
+    height: 200px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+
+.project {
+    background-color: orange;
+
+    border: 10px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    width: 98%;
+}
+
+.sup {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax (50px, 50px));
+    grid-template-rows: repeat(1);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    grid-template-areas:
+        "adress telephone time email ";
+}
+
+.grid-elem {
+    background-color: rgb(246, 207, 160);
+    margin: 10px;
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.contacts {
+    background-color: rgb(246, 207, 160);
+    margin: 10px;
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
