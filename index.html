@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    Выберите тему
+
+    <select>
+        <option id="blue" data-color="blue" onclick="changeColor('blue')">Синяя</option>
+        <option id="red" data-color="red" onclick="changeColor('red')">Красная</option>
+        <option id="purple" data-color="purple" onclick="changeColor('purple')">Фиолетовая</option>
+        <option id="green" data-color="green" onclick="changeColor('green')">Зеленая</option>
+        <option id="orange" data-color="orange" onclick="changeColor('orange')">Оранжевая</option>
+    </select>
+
+
+
+
+
+
+    <script>
+        function changeColor(colorValue) {
+            document.body.style.background = document.getElementById(colorValue).dataset.color;
+        }
+    </script>
+
+
+
+    <script src="index.js"> </script>
+
+</body>
+
+</html>
