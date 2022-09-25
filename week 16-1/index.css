@@ -1,0 +1,9 @@
+body {
+    background-image: url(assets/renault.jpg)
+}
+
+#car{
+    justify-content: center;
+    text-align: center;
+}
+

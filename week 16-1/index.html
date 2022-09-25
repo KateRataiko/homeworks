@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1> Выберите автомобиль</h1>
+
+    <select name="modelOfCar" onchange="show()" id="model">
+        <option disabled selected="selected"> Модель</option>
+        <option value="logan">Logan</option>
+        <option value="daster">Daster</option>
+        <option value="kaptur">Kaptur</option>
+        <option value="arkana">Arkana</option>
+        <option value="koleos">Koleos</option>
+    </select> <br> <br>
+
+    <select name="kppOfCar" id="kpp">
+        <option disabled selected="selected"> КПП</option>
+        <option value="mehanic">Механическая</option>
+        <option value="avtomat">Автомат</option>
+    </select> <br> <br>
+
+    <select name="colorOfCar" id="color">
+        <option disabled selected="selected"> Цвет</option>
+        <option value="black">Черный</option>
+        <option value="white">Белый</option>
+        <option value="blue">Синий</option>
+        <option value="red">Красный</option>
+
+    </select> <br> <br>
+
+    <select name="complectationOfCar" id="complectation">
+        <option disabled selected=" selected"> Комплектация</option>
+        <option value="basic">Базовая</option>
+        <option value="midle">Средняя</option>
+        <option value="max">Максимальная</option>
+        <option value="sale">Акционная</option>
+
+    </select> <br> <br>
+
+
+    <button type="button" class="button" onclick="">Рассчитать цену</button><br><br>
+    <div class="price">Итоговая цена</div><br>
+
+
+    <div id="result">
+        <img src="" id="carImage" width="300">
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
