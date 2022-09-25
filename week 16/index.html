@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Массивы и Циклы</h1>
+    <div> Практическое задание 💎<br>
+
+        Напишите функцию `sumInput()`, которая:<br>
+        - Просит пользователя ввести значения, используя текстовое поле `input` и сохраняет их в массив<br>
+        - Когда пользователь нажмёт кнопку «Готово»<br>
+        Выводит получившийся массив в отсортированном по возрастанию виде<br>
+        Подсчитывает и возвращает сумму элементов массива</div><br>
+
+
+    <input type="number" class="input" value=""> <br>
+
+    <button>Добавить число</button><br>
+    <button type="button" class="button2" onclick="sumInpute()">Готово</button><br>
+    <div class="out">Отсортированный массив </div><br>
+    <div class="summa">Сумма элементов массива</div><br>
+
+
+
+    <script src="index.js"> </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- 
+<body>
+    <h1>События</h1>
+    <input type="text" id="test" onkeyup="document.getElementById('result')
+    .innerText = document.getElementById('test')
+    .value;" onmouseover="colorMe()" onmouseout="colorMeBack()">
+    <button onClick=" check"> Нажми меня</button>
+    <div id="result"></div>
+
+
+
+    <script>
+        function colorMe() {
+            document.getElementById('test').style.backgroundColor = 'yellow';
+        }
+
+        function colorMeBack() {
+            document.getElementById('test').style.backgroundColor = 'white';
+        }
+    </script>
+</body> -->
+
+
+
+
+
+<!-- <body>
+    <h1>События</h1>
+
+    <select name="breed" id="breed" onchange="show()">
+        <option disabled selected="selected"> Выберите породу</option>
+        <option value="persian">Персидская</option>
+        <option value="siamese">Сиамская</option>
+        <option value="british shorthair">Британская короткошерстная</option>
+        <option value="scotish">Шотландская</option>
+        <option value="sphynx">Сфинкс</option>
+        <option value="russian blue">Русская голубая</option>
+        <option value="maine coon">Мейн-кун</option>
+        <option value="bengal">Бенгальская</option>
+        <option value="nobreed">Дворовая</option>
+    </select> <br> <br>
+
+    <div id="result">
+        <img src="" id="catImage" width="300">
+    </div>
+
+
+    <script>
+
+        switch (document.getElementById("breed")
+            .value) {
+            case persian:
+                document.getElementById("catImage")
+                    .src = "https://www.google.com/search?q=%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjYxfub5K36AhViQ_EDHXtfAjMQ_AUoAXoECAIQAw&biw=1536&bih=739&dpr=1.25#imgrc=124l-GzC1xJIRM";
+                break;
+            case siamese:
+                document.getElementById("catImage")
+                    .src = "https://petsi.net/cat-breeds/siamskaya-koshka";
+                break;
+        }
+
+
+        function show() {
+            if (document.getElementById("breed").value
+                == "persian")
+                document.getElementById("catImage")
+                    .src = "https://www.google.com/search?q=%D0%BF%D0%B5%D1%80%D1%81%D0%B8%D0%B4%D1%81%D0%BA%D0%B0%D1%8F&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjYxfub5K36AhViQ_EDHXtfAjMQ_AUoAXoECAIQAw&biw=1536&bih=739&dpr=1.25#imgrc=124l-GzC1xJIRM";
+        }
+
+
+        function show() {
+            if (document.getElementById("breed").value
+                == "siamese")
+                document.getElementById("catImage")
+                    .src = "https://faunistics.com/siamskaya-koshka/#gallery-1";
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+ -->
