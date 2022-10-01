@@ -16,4 +16,7 @@ otchestvo = otchestvo.charAt(0).toUpperCase() + otchestvo.slice(1);
 console.log(familiya);
 console.log(name);
 console.log(otchestvo);
+document.querySelector ('.firstname').innerHTML = familiya;
+document.querySelector ('.secondname').innerHTML = name;
+document.querySelector ('.thirdname').innerHTML = otchestvo;
 }
