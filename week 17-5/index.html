@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pricingaso-tukatables {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            border-top-left-radius: 47px;
+            border-bottom-right-radius: 47px;
+            color: #f7f1f1;
+            background: #9b0bc7;
+            position: relative;
+            width: 249px;
+            margin-right: 9px;
+            margin-bottom: 1em;
+            transition: all .7s;
+            cursor: pointer;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles:hover {
+            transform: scale(1.05);
+            transition: all .7s;
+            z-index: 100;
+            box-shadow: 0 0 9px #7d7676;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles li {
+            margin: 8px 19px;
+            position: relative;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles li.sentered {
+            font-size: 145%;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 19px;
+            text-transform: uppercase;
+            border-bottom: 3px solid white;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles:nth-of-type(2) {
+            background: #a51869;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles:nth-of-type(3) {
+            background: #2d2fb7;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles:last-of-type {
+            margin-right: 0;
+        }
+
+        .pricingaso-tukatables ul.tomoregardles li:last-of-type {
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .pricingaso-tukatables a.suckasate-gpapricing {
+            background: white;
+            text-decoration: none;
+            padding: 9.7px;
+            display: inline-block;
+            margin: 9px auto;
+            border-radius: 3px;
+            color: navy;
+            text-transform: uppercase;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .pricingaso-tukatables ul.tomoregardles {
+                border-radius: 0;
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .pricingaso-tukatables ul.tomoregardles:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+            .pricingaso-tukatables a.suckasate-gpapricing {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>Генератор 10 случайных чисел </center>
+    </h1>
+    <p>
+        <center>генератор 10 случайных чисел (по нажатию на кнопку) в диапазоне от -10 до 10 и найдите среди них
+            минимальное,</center>
+        <br>
+        <center> максимальное и среднее арифметическое, а также сумму и произведение всех этих чисел.</center>
+    </p><br>
+
+
+    <div class="pricingaso-tukatables">
+        <ul class="tomoregardles">
+            <li class="sentered"><b>генератор 10 случайных чисел</b></li>
+            <li><b>
+                    <div class="reginir"> Сгенирировали:</div>
+                </b> </li>
+            <li><b>
+                    <div class="minimalnoe">Минимальное:</div>
+                </b> </li>
+            <li><b>
+                    <div class="maxsimalnoe">Максимальное:</div>
+                </b> </li>
+            <li><b>
+                    <div class="srednee">Среднее арифметическое:</div>
+                </b> </li>
+            <li><b>
+                    <div class="summazisel">Сумма чисел:</div>
+                </b> </li>
+            <li><b>
+                    <div class="proizvedenie">Произведение чисел:</div>
+                </b> </li> <br>
+            <li><button type="button" class="button" onclick="Number">Сгенирировать</button></li>
+            <br>
+
+
+        </ul>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
