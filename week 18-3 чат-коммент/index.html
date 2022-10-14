@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #author {
+            width: 300px;
+            height: 50px;
+            font-size: 13px;
+            padding: 6px 0 4px 10px;
+            border-radius: 18px;
+        }
+
+        #button {
+            width: 300px;
+            height: 50px;
+        }
+
+        input {
+            width: 300px;
+            height: 300px;
+            font-size: 13px;
+            padding: 6px 0 4px 10px;
+            border: 1px solid #cecece;
+            background: #F6F6f6;
+            border-radius: 18px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(170, 221, 246);
+        }
+
+        .ready {
+            width: 300px;
+            height: 50px;
+            color: white;
+            background-color: blue;
+            border-radius: 8px;
+        }
+
+        body {
+            background-image: url(image/abstract.jpg)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center> интерфейс для анонимных комментариев со спамфильтром </center>
+    </h1>
+    <form>
+        <div>
+            <center>
+                <label for="author">Имя *
+                    <span id="authorError"> </span>
+                </label>
+            </center>
+        </div>
+        <div>
+            <center>
+                <input type="text" name="author" id="author" value="" placeholder="Введите имя" class="inputs" />
+            </center>
+        </div>
+        <br>
+        <div>
+            <center>
+                <label for="comment">Коммментарий:
+                    <span id="commentError"></span>
+            </center>
+            </label>
+        </div>
+
+        <div>
+            <textarea name="comment" id="comment" class="inputs"></textarea>
+        </div>
+        <br>
+        <div>
+            <input name="button" type="button" id="button" value="Отправить" onclick="checkMessage();" />
+        </div>
+        <br>
+        <!-- <div>
+            <center><button type="button" class="ready" onclick=""> Готово </button></center>
+            <br>
+        </div> -->
+
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
