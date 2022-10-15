@@ -6,22 +6,35 @@ function (event){
     }
 });
 
-function sendMessage(author, comment) {
-    document.getElementById("chat").innerHTML += `<span class='author'>${author}: </span> <span> ${comment}</span> <br>`;
-}
+let i = 1;
+
+function sendMessage(author, comment, avatar) {
+    document.getElementById("chat").innerHTML += `<span><img src=${avatar} width="150" height="150"</span><span class='author'>${author}: </span> <span> ${comment}</span> <br>`;
+} 
+
+
 
 function checkMessage() {
     let author = document.getElementById("author").value;
     let comment = document.getElementById("comment").value;
+    let avatar = document.getElementById("avatar").value;
 
-if(localStorage.getItem('name')==null)
+
+
+console.log(avatar)
+if(localStorage.getItem(author)==null)
 {
-localStorage.setItem('name', author);
+localStorage.setItem('name ' + author , author);
 }
-
-    sendMessage(author, comment);
+if(localStorage.getItem(author + ' avatar')==null)
+{
+localStorage.setItem(author  + ' avatar', avatar);
 }
+localStorage.setItem('comment ' + author + ' ' + i++ , comment);
 
+
+    sendMessage(author, comment, avatar);
+}
 
 
 
