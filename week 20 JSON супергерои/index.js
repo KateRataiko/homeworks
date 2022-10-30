@@ -65,9 +65,6 @@ console.log(heros.length);
 
     let herosContent = "";
    
-   
-
-   
  for(let hero of heros){
         herosContent += `<div class='hero'>
         <h2>Имя: ${hero.Имя}</h2>
@@ -76,8 +73,37 @@ console.log(heros.length);
         <div>Друзья: ${hero.Друзья} </div> 
         <div>Суперсилы: ${hero.Суперсилы} </div>
         <img src= ${hero.imgSrc}> </img>
+        <div>
+        <label for="reiting"> Рейтинг </label> <br />
+        <input type="radio" name="reiting" value="1" /> 1
+        <input type="radio" name="reiting" value="2"/> 2
+        <input type="radio" name="reiting" value="3"/> 3
+        <input type="radio" name="reiting" value="4"/> 4
+        <input type="radio" name="reiting" value="5"/> 5
+        <input type="radio" name="reiting" value="6"/> 6
+        <input type="radio" name="reiting" value="7"/> 7
+        <input type="radio" name="reiting" value="8"/> 8
+        <input type="radio" name="reiting" value="9"/> 9
+        <input type="radio" name="reiting" value="10"/> 10
+    </div>
+        <div>
+            <input name="button" type="button" id="button" value="Принять данные" onclick="" />
+        </div>
         </div>`;
+
+        const reitHerous = document.querySelectorAll('input[name="reiting"]')
+        
+        for (const f of reitHerous) {
+            if (f.checked) {
+              console.log(f.value)
+              localStorage.setItem("reiting " + hero.name, f );
+            }
+          }
+       
  }
 document.getElementById("herosContainer").innerHTML = herosContent;
 
 });
+
+
+
