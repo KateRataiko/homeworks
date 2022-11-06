@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about cat</title>
+    <style>
+        body {
+            background-image: url(img/1621049610_7-oir_mobi-p-rizhii-kot-v-snegu-zhivotnie-krasivo-foto-7.jpg)
+        }
+
+        fieldset {
+            border-color: orange;
+            width: 50px;
+        }
+
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center> Cтраница-опросник для обладателей котиков</center>
+    </h1>
+    <p>
+        <center> Счастливые обладатели котиков и просто все любители прекрасных животных!</center><br>
+        <center>Мы рады приветствовать вас на нашей
+            странице-опроснике</center>
+    </p>
+    <!-- <form>
+        <fieldset>
+            <legend> Данные о сухом корме</legend>
+            <div> <b> Фирма корма употребляемого Котом ?</b> </div> <br>
+            <div>
+
+
+                <input type="checkbox" id="korm1" class="feed" value="RoyalConin" />
+                <label for="korm1"> Royal Conin</label> <br>
+                <br>
+
+                <input type="checkbox" id="korm2" class="feed" value="Whiskas" />
+                <label for="korm2"> Whiskas</label> <br>
+                <br>
+
+                <input type="checkbox" id="korm3" class="feed" value="Garfield" />
+                <label for="korm3">Garfield </label> <br>
+                <br>
+
+                <input type="checkbox" id="korm4" class="feed" value="ProBalance" />
+                <label for="korm4">ProBalance </label> <br>
+                <br>
+
+                <input type="checkbox" id="korm5" class="feed" value="Purina" />
+                <label for="korm5">Purina </label> <br>
+                <br>
+
+                <input type="checkbox" id="korm6" class="feed" value="Hills" />
+                <label for="korm6"> Hills</label> <br>
+                <br>
+            </div>
+        </fieldset> -->
+    <!-- </form> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+    <form id="formElem">
+        <div><label for="catname">Кличка Кота</label>
+            <input type="text" id="catname" required /> *
+        </div>
+        <br>
+        <div><label for="FIO">ФИО владельца Кота</label>
+            <input type="text" id="FIO" required /> *
+        </div>
+
+        <br>
+        <div class="breed" id="breed"> Выбирите породу питомца
+            <select> Выбирите породу питомца
+                <option value="-"> Сиамская</option>
+                <option value="-"> Британская</option>
+                <option value="-"> Персидская</option>
+                <option value="-"> Бенгальская</option>
+                <option value="-"> Сфинкс</option>
+                <option value="-"> Сибирская</option>
+                <option value="-"> Русская голубая</option>
+                <option value="-"> Без породы</option>
+
+            </select>
+        </div>
+        <br>
+        <div class="feed" id="feed">
+            <form name="feedForm">
+                <label for="name"> Чем питается? </label> <br />
+                <input type="checkbox" /> сухой корм <br />
+                <input type="checkbox" />влажный корм <br>
+                <input type="checkbox" /> натуральный корм
+            </form>
+        </div>
+        <br>
+        <div class="sex" id="sex">
+            <label for="sex"> Самец или самка </label> <br />
+            <input type="radio" name="sex" /> Самец <br />
+            <input type="radio" name="sex" /> Самка
+
+        </div>
+        <br>
+        <div> Комментарий владельца <br>
+            <textarea> Введите комментарий  </textarea>
+        </div>
+
+        <br>
+
+        <div>Можете добавить фотографию вашего питомца </div>
+        <div> <input type="file" />
+        </div>
+        <br>
+
+        <div>
+            <button type="submit" id="postButton" onclick=""> Зарегистрироваться </button>
+        </div>
+    </form>
+
+
+    <!-- <script src="index.js"></script> -->
+
+
+
+    <script>
+        postButton.onclick = function (event) {
+            event.preventDefault();
+            let user = {
+                catname: document.getElementById("catname").value,
+                FIO: document.getElementById("FIO").value
+            }
+            console.log(user)
+            fetch("https://httpbin.org/post",
+                {
+                    method: 'POST',
+                    body: new FormData(formElem),
+                })
+                .then(response => response.json())
+                .then(user => {
+                    console.log(user);
+                })
+                .catch(error => console.log(error));
+        }
+    </script>
+</body>
+
+</html>
